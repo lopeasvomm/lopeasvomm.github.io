@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mainpage</title>
+    <meta content="utf-8">
+    <link rel="stylesheet" href="./styles/colors.css">
+    <link rel="stylesheet" href="./styles/formatting.css">
+    <link rel="stylesheet" href="./styles/transitions-animations.css">
+    <style>
+    </style>
+  </head>
+  <body>
+  <header>
+    <h1>Info:</h1>
+  </header>
+  <main>
+    <h2>This webpage is looking at different building styles, sounds and facts about buildings.</h2>
+  </main>
+  <dl>
+    <dt>New buildings have a nice style to them and in fact don't make much noise compared to older buildings</dt>
+    <dd>
+      <picture>
+        <source srcset="./images/newbuilding/largenewbuilding.jpg" media="(min-width: 800px)" >
+        <source srcset="./images/newbuilding/normalnewbuilding.jpg" media="(min-width: 600px)">
+        <img src="./images/newbuilding/smallnewbuilding.jpg" alt="newbuilding">
+      </picture>
+    </dd>
+    <dd>
+      <video controls width="250">
+        <source src="./videos/20projects.webm" type="video/webm">
+        <source src="./videos/20projects.mp4" type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </dd>
+      <dt>Older buildings have style but make alot of noise because everything is wearing out.</dt>
+    <dd>
+      <picture>
+        <source srcset="./images/oldbuilding/largeoldbuilding.jpg" media="(min-width: 800px)" >
+        <source srcset="./images/oldbuilding/normaloldbuilding.jpg" media="(min-width: 600px)">
+        <img src="./images/oldbuilding/smallloldbuilding.jpg" alt="oldbuilding">
+      </picture>
+    </dd>
+  </dl>
+  <p><em>Lets go listen to some old building sounds</em></p>
+  <div>
+  <figure>
+    <figcaption>Sounds of a too old of a building</figcaption>
+    <audio
+        controls
+        src="./audio/buildingsound.mp3">Your browser does not support the <code>audio</code> element.</audio>
+  </figure>
+  </div>
+    <h2>Extra facts</h2>
+    <canvas 
+        id="shiftedhouse" width="800" height="400" style="border:1px solid #000000;">
+    </canvas> 
+    <script>
+      var c = document.getElementById("shiftedhouse");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "#FF0000"; // Building shape
+      ctx.fillRect(12.5,40,175,400);
+      //  Draw triangle
+      ctx.fillStyle="#A2322E";
+      ctx.beginPath();
+      ctx.moveTo(6.5,40);
+      ctx.lineTo(191,40);
+      ctx.lineTo(99,0);
+      ctx.closePath();
+      ctx.fill();
+      // windows1
+      ctx.fillStyle="#663300"; // frame
+      ctx.fillRect(25,50,35,60);
+      ctx.fillStyle="#0000FF"; // glass
+      ctx.fillRect(27,52,13,23);
+      ctx.fillRect(43,52,13,23);
+      ctx.fillRect(43,77,13,21);
+      ctx.fillRect(27,77,13,21);
+      ctx.fillStyle="#b2b2b2"; // legde
+      ctx.fillRect(27,100,30,8);
+      // windows2
+      ctx.fillStyle="#663300"; // frame
+      ctx.fillRect(25,150,35,60);
+      ctx.fillStyle="#0000FF"; // glass
+      ctx.fillRect(27,152,13,23);
+      ctx.fillRect(43,152,13,23);
+      ctx.fillRect(43,177,13,21);
+      ctx.fillRect(27,177,13,21);
+      ctx.fillStyle="#b2b2b2"; // legde
+      ctx.fillRect(27,200,30,8);
+      // windows3
+      ctx.fillStyle="#663300"; // frame
+      ctx.fillRect(25,250,35,60);
+      ctx.fillStyle="#0000FF"; // glass
+      ctx.fillRect(27,252,13,23);
+      ctx.fillRect(43,252,13,23);
+      ctx.fillRect(43,277,13,21);
+      ctx.fillRect(27,277,13,21);
+      ctx.fillStyle="#b2b2b2"; // legde
+      ctx.fillRect(27,300,30,8);
+      // windows4
+      ctx.fillStyle="#663300"; // frame
+      ctx.fillRect(142,50,35,60);
+      ctx.fillStyle="#0000FF"; // glass
+      ctx.fillRect(144,52,13,23);
+      ctx.fillRect(160,52,13,23);
+      ctx.fillRect(160,77,13,21);
+      ctx.fillRect(144,77,13,21);
+      ctx.fillStyle="#b2b2b2"; // legde
+      ctx.fillRect(144,100,30,8);
+      // windows5
+      ctx.fillStyle="#663300"; // frame
+      ctx.fillRect(142,150,35,60);
+      ctx.fillStyle="#0000FF"; //  glass
+      ctx.fillRect(144,152,13,23);
+      ctx.fillRect(160,152,13,23);
+      ctx.fillRect(160,177,13,21);
+      ctx.fillRect(144,177,13,21);
+      ctx.fillStyle="#b2b2b2"; //  legde
+      ctx.fillRect(144,200,30,8);
+      //  windows6
+      ctx.fillStyle="#663300"; //  frame
+      ctx.fillRect(142,250,35,60);
+      ctx.fillStyle="#0000FF"; //  glass
+      ctx.fillRect(144,252,13,23);
+      ctx.fillRect(160,252,13,23);
+      ctx.fillRect(160,277,13,21);
+      ctx.fillRect(144,277,13,21);
+      ctx.fillStyle="#b2b2b2"; //  legde
+      ctx.fillRect(144,300,30,8);
+      // door1
+      ctx.fillStyle = "#754719";
+      ctx.fillRect(80,360,15,400);
+      // door2
+      ctx.fillStyle = "#754719";
+      ctx.fillRect(95,360,15,400);
+      // door knob1
+      ctx.beginPath();
+      ctx.fillStyle = "#F2F2F2";
+      ctx.arc(92,380,3,0,2*Math.PI);
+      ctx.fill();
+      ctx.closePath();
+      // door knob2
+      ctx.beginPath();
+      ctx.fillStyle = "#F2F2F2";
+      ctx.arc(98,380,3,0,2*Math.PI);
+      ctx.fill();
+      ctx.closePath();
+      // Text description
+      ctx.fillStyle = "#754719";
+      ctx.font="20px Veranda";
+      ctx.fillText("Buildings come in many different ways has you can tell.",230,120);
+      ctx.fillText("Buildings come in many different ways has you can tell.",230,120);
+      ctx.fillText("Does not mean they are good though.",230,150);
+      ctx.fillText("Does not mean they are good though.",230,150);
+      ctx.fillText("Houses over time will shift.",230,180);
+      ctx.fillText("Houses over time will shift.",230,180);
+    </script> 
+    <br />
+    <nav class="NavPages">
+      <ol>
+          <li class="Pages">Mainpage</li>
+          <li class="Pages"><a href="./page_1.html">page 1</a></li>
+          <li class="Pages"><a href="./page_2.html">Page 2</a></li>
+      </ol>
+    </nav>
+    <footer>
+      Mainpage
+    </footer>
+  </body>
+</html>

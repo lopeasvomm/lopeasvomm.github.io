@@ -1,0 +1,54 @@
+/*This is animation*/
+h2{
+  animation-duration: 3s;
+  animation-name: Slidewats;
+  animation-iteration-count: 2;;
+}
+
+@keyframes Slidewats{
+  from {
+    margin-left: 100%;
+    width: 300%;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  }
+}
+
+/*transition*/
+p:hover {
+    color: rgb(180, 180, 255);
+    transition-property: color;
+    transition-duration: 4s;
+}
+
+/*This is the media stuff*/
+@media screen and (max-width: 600px) {
+    body {
+      background-color: rgb(212, 212, 148);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+      background-color: rgb(204, 204, 204);
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    body {
+      background-color: rgb(230, 230, 31);
+    }
+}
+
+@media screen and (min-width: 1801px) {
+  body {
+    background-color: rgb(132, 233, 0);
+  }
+}
+
+

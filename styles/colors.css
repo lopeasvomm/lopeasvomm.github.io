@@ -1,0 +1,39 @@
+*{
+
+}
+
+dd{
+    color: #232232;
+}
+
+dd dt{
+    color: #232232;
+}
+
+main, h2{
+    color:#505083
+}
+
+.Thiscolorblue{
+    color: #0000FF;
+}
+
+#18{
+    color: #180000;
+}
+
+dd ~ pictures {
+    color: #FF0000;
+}
+
+p ~ em{
+    color: rgb(44, 8, 8);
+}
+  
+img + p{
+    color: #15f700
+}
+
+figure + figcaption {
+    background-color: #0000FF;
+}
